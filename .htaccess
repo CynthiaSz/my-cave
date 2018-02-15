@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule	^$	php/index.php	[L]	# s'active si le début est directement suivi par la fin de la ligne (url vide)
+RewriteRule	^([^/]*\.php)$	php/$1	[L]	# capture les adresses de fichiers php hors sous dossiers et les redirige vers le sous dossier php
